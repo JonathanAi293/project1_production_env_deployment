@@ -1,0 +1,14 @@
+[Unit]
+Description=My Blog App
+After=network.target mysqld.service redis.service
+
+[Service]
+User=ops
+WorkingDirectory=/home/ops/project/app
+ExecStart=/home/ops/.nvm/versions/node/v16.20.2/bin/node /home/ops/project/app/app.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

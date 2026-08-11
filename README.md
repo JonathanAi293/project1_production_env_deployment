@@ -19,7 +19,6 @@ project/<br>
 │   └── healthcheck.sh   # 系统健康巡检脚本<br>
 ├── configs/<br>
 │   ├── nginx-myapp.conf # Nginx 反向代理 + HTTPS 配置<br>
-│   ├── redis.conf       # Redis 配置示例（脱敏）<br>
 │   └── myapp.service    # systemd 单元文件<br>
 ├── docs/                # 架构图、部署文档、故障复盘<br>
 └── README.md<br>
